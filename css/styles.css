@@ -633,7 +633,7 @@ body {
 }
 .modal {
   width: 408px;
-  height: 576px;
+  height: 584px;
   background-color: #fcfcfc;
   position: absolute;
   top: 50%;
@@ -767,7 +767,7 @@ body {
   background-color: var(--logo-color);
   padding: 16px 32px;
   display: block;
-  margin: 0 auto;
+  margin: 24px auto;
   border-radius: 4px;
   border: 0px;
   box-shadow: 0px 4px 4px 0px #00000026;
@@ -793,15 +793,6 @@ body {
   color: #8e8f99;
   margin-bottom: 4px;
 }
-.agreement-text {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
 .check-text {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -812,6 +803,7 @@ body {
   color: #8e8f99;
   display: flex;
   align-items: center;
+  margin-top: 16px;
 }
 .check-text span {
   width: 16px;
