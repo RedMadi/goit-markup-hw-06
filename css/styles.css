@@ -436,6 +436,11 @@ body {
 .footer-social {
   margin-right: 80px;
 }
+.soc-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 .subscribe {
 }
 .subscribe-form {
@@ -496,14 +501,8 @@ body {
 .subscribe-button:hover {
   background-color: #404bbf;
 }
-.sub-icon-wrap {
-  position: relative;
-  padding-right: 24px;
-}
 .subscribe-icon {
   fill: #f4f4f4;
-  position: absolute;
-  transform: translateY(-50%);
 }
 /*Portfolio*/
 
@@ -633,7 +632,7 @@ body {
 }
 .modal {
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background-color: #fcfcfc;
   position: absolute;
   top: 50%;
@@ -641,7 +640,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -655,12 +654,13 @@ body {
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: block;
-  margin-left: auto;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
 }
 .close-icon {
   fill: #2e2f42;
@@ -739,6 +739,7 @@ body {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
 }
 .modal-textarea::placeholder {
   font-family: "Roboto", sans-serif;
@@ -767,7 +768,7 @@ body {
   background-color: var(--logo-color);
   padding: 16px 32px;
   display: block;
-  margin: 24px auto;
+  margin: 24px auto 0 auto;
   border-radius: 4px;
   border: 0px;
   box-shadow: 0px 4px 4px 0px #00000026;
@@ -782,8 +783,11 @@ body {
 .modal-field {
   margin-bottom: 8px;
 }
+.modal-field-com {
+  margin-bottom: 16px;
+}
 .label-text {
-  display: inline-block;
+  display: block;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -803,7 +807,6 @@ body {
   color: #8e8f99;
   display: flex;
   align-items: center;
-  margin-top: 16px;
 }
 .check-text span {
   width: 16px;
@@ -820,4 +823,7 @@ body {
   background-color: #404bbf;
   border: none;
   fill: #f4f4f4;
+}
+.privacy-policy {
+  color: #4d5ae5;
 }
