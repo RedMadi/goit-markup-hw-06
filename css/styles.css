@@ -783,6 +783,9 @@ body {
 .modal-field {
   margin-bottom: 8px;
 }
+.modal-field-last {
+  margin-bottom: 0;
+}
 .modal-field-com {
   margin-bottom: 16px;
 }
